@@ -3,7 +3,7 @@ using ShortestPath.Core.Entities;
 
 namespace ShortestPath.Core;
 
-public class DijkstraAlgorithm
+public class ShortPathRepository : IShortPathRepository
 {
     public ShortestPathDataDTO FindShortestPath(string fromNodeName, string toNodeName, List<Node> graph)
     {
