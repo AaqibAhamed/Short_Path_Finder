@@ -1,3 +1,4 @@
+using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using ShortestPath.Core.DTO;
 
@@ -19,6 +20,7 @@ public class ShortestPathController : ControllerBase
         {
             return BadRequest("Invalid request data.");
         }
+         Console.WriteLine(JsonSerializer.Serialize(request));
 
         var result = _shortPathRepository.FindShortestPath(request.FromNode, request.ToNode, request.GraphNodes);
         return Ok(result);
