@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortestPath.Core", "ShortestPath.Core\ShortestPath.Core.csproj", "{91D82A49-3D22-4524-BCC4-DF9CBDD23AAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortestPath.API", "ShortestPath.API\ShortestPath.API.csproj", "{93DACE98-06E7-43DF-852C-0C79B5B92DF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortestPath.Console", "ShortestPath.Console\ShortestPath.Console.csproj", "{382B13A5-998B-444B-99C8-115D7C70735C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91D82A49-3D22-4524-BCC4-DF9CBDD23AAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91D82A49-3D22-4524-BCC4-DF9CBDD23AAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91D82A49-3D22-4524-BCC4-DF9CBDD23AAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91D82A49-3D22-4524-BCC4-DF9CBDD23AAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93DACE98-06E7-43DF-852C-0C79B5B92DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93DACE98-06E7-43DF-852C-0C79B5B92DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93DACE98-06E7-43DF-852C-0C79B5B92DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93DACE98-06E7-43DF-852C-0C79B5B92DF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{382B13A5-998B-444B-99C8-115D7C70735C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{382B13A5-998B-444B-99C8-115D7C70735C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{382B13A5-998B-444B-99C8-115D7C70735C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{382B13A5-998B-444B-99C8-115D7C70735C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
