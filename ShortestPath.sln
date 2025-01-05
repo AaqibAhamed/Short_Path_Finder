@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortestPath.API", "Shortes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortestPath.Console", "ShortestPath.Console\ShortestPath.Console.csproj", "{382B13A5-998B-444B-99C8-115D7C70735C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortestPath.Tests", "ShortestPath.Tests\ShortestPath.Tests.csproj", "{3AD7DA7D-EC19-47BC-9847-DD7F8E1548C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{382B13A5-998B-444B-99C8-115D7C70735C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{382B13A5-998B-444B-99C8-115D7C70735C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{382B13A5-998B-444B-99C8-115D7C70735C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AD7DA7D-EC19-47BC-9847-DD7F8E1548C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD7DA7D-EC19-47BC-9847-DD7F8E1548C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD7DA7D-EC19-47BC-9847-DD7F8E1548C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD7DA7D-EC19-47BC-9847-DD7F8E1548C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
