@@ -21,7 +21,7 @@ class Program
         System.Console.Write("Enter TO node: ");
         var toNode = System.Console.ReadLine()?.Trim() ?? string.Empty;
 
-        var result = shortPathRepository.FindShortestPath(fromNode, toNode, graph);
+        var result = shortPathRepository.FindShortestPathV3(fromNode, toNode, graph);
 
         if (result == null)
         {
@@ -29,11 +29,10 @@ class Program
             return;
         }
         else
-        {
-            
-            System.Console.WriteLine($"Shortest path from {fromNode} to {toNode}: {string.Join(" -> ", result.NodeNames)}"); // A -> B -> C
+        {          
+            //System.Console.WriteLine($"Shortest path from {fromNode} to {toNode}: {string.Join(" -> ", result.NodeNames)}"); // A -> B -> C
 
-            //System.Console.WriteLine($"Shortest path from {fromNode} to {toNode}: {string.Join(" , ", result.NodeNames)}"); A,B,C
+            System.Console.WriteLine($"Shortest path from NodeName {fromNode} to NodeName {toNode}: {string.Join(" , ", result.NodeNames)}"); // A,B,C - requested in document
         
             System.Console.WriteLine($"Total Distance: {result.Distance}");
         }
