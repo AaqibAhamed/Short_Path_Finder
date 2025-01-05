@@ -1,5 +1,7 @@
-﻿using ShortestPath.Core;
-using ShortestPath.Core.Entities;
+﻿using ShortestPath.Core.Entities;
+using ShortestPath.Core.Repositories;
+
+namespace ShortestPath.Console;
 
 class Program
 {
@@ -7,21 +9,21 @@ class Program
     {
         IShortPathRepository shortPathRepository = new ShortPathRepository();
 
-        Console.Write("Enter FROM node: ");
-        var fromNode = Console.ReadLine();
+        System.Console.Write("Enter FROM node: ");
+        var fromNode = System.Console.ReadLine();
 
-        Console.Write("Enter TO node: ");
-        var toNode = Console.ReadLine();
+        System.Console.Write("Enter TO node: ");
+        var toNode = System.Console.ReadLine();
 
         var graph = BuildSampleGraph(); // Build the graph with sample data
 
         var result = shortPathRepository.FindShortestPath(fromNode, toNode, graph);
 
-        Console.WriteLine($"Shortest Path: {string.Join(", ", result.NodeNames)}");
+        System.Console.WriteLine($"Shortest Path: {string.Join(", ", result.NodeNames)}");
         
-        Console.WriteLine($"Total Distance: {result.Distance}");
+        System.Console.WriteLine($"Total Distance: {result.Distance}");
 
-        Console.WriteLine(BuildSampleGraph);
+        System.Console.WriteLine(BuildSampleGraph);
     }
 
     static List<Node> BuildSampleGraph()

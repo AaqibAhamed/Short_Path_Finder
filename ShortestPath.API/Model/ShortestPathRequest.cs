@@ -1,5 +1,7 @@
 using ShortestPath.Core.Entities;
 
+namespace ShortestPath.API.Model;
+
 public class ShortestPathRequest
 {
     public required string FromNode { get; set; }

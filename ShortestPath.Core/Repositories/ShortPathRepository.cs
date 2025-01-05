@@ -1,7 +1,7 @@
 using ShortestPath.Core.DTO;
 using ShortestPath.Core.Entities;
 
-namespace ShortestPath.Core;
+namespace ShortestPath.Core.Repositories;
 
 public class ShortPathRepository : IShortPathRepository
 {

@@ -1,4 +1,5 @@
 using ShortestPath.Core;
+using ShortestPath.Core.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,7 +8,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.PropertyNamingPolicy = null;
+        options.JsonSerializerOptions.AllowTrailingCommas = true;
+    });
 builder.Services.AddScoped<IShortPathRepository, ShortPathRepository>();
 
 
