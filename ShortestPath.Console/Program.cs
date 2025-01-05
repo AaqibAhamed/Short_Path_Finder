@@ -13,6 +13,8 @@ class Program
 
         var graph = GraphBuilder.BuildGraphFromUserInput(); // Build the graph with user input
 
+        GraphPrinter.PrintGraph(graph); // Print the graph
+
         System.Console.Write("Enter FROM node: ");
         var fromNode = System.Console.ReadLine()?.Trim() ?? string.Empty;
 
@@ -28,6 +30,7 @@ class Program
         }
         else
         {
+            
             System.Console.WriteLine($"Shortest path from {fromNode} to {toNode}: {string.Join(" -> ", result.NodeNames)}"); // A -> B -> C
 
             //System.Console.WriteLine($"Shortest path from {fromNode} to {toNode}: {string.Join(" , ", result.NodeNames)}"); A,B,C
