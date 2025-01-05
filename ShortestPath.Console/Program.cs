@@ -37,19 +37,4 @@ class Program
 
     }
 
-
-    static List<Node> BuildSampleGraph()
-    {
-        // Example graph construction
-        var nodeA = new Node { Name = "A" };
-        var nodeB = new Node { Name = "B" };
-        var nodeC = new Node { Name = "C" };
-        var nodeD = new Node { Name = "D" };
-
-        nodeA.Edges.Add(new Edge { TargetNode = nodeB, Weight = 1 });
-        nodeB.Edges.Add(new Edge { TargetNode = nodeC, Weight = 2 });
-        nodeC.Edges.Add(new Edge { TargetNode = nodeD, Weight = 3 });
-
-        return new List<Node> { nodeA, nodeB, nodeC, nodeD };
-    }
 }
